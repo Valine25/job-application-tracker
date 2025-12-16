@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./dashboard.css"
 import { useJobs } from '../context/jobcontext'
+import AddJob from './AddJob';
 
 const Dashboard = () => {
     const {jobs}=useJobs();
+    const [showModal,setShowModal]=useState(false);
   return (
     <div className='dashboard'>
       <div className="sidebar">
-        <button className="add-btn">Add Job</button>
+        <button className="add-btn" onClick={()=>setShowModal(true)}>Add Job</button>
       </div>
+      {showModal && <AddJob onClose={()=>setShowModal(false)}/>}
       <div className="main">
         <div className="summary">
             <div className="card yellow">

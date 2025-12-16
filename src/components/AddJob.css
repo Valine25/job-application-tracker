@@ -1,0 +1,61 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.modal label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.modal input,
+.modal select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cancel {
+  padding: 6px 14px;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.save {
+  padding: 6px 14px;
+  background: #33cc66;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
